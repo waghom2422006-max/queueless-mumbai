@@ -22,10 +22,10 @@ function App() {
   ];
 
   const fetchLocations = () => {
-    axios.get(axios.get('https://queueless-mumbai.onrender.com/api/locations'))
-      .then(res => setLocations(res.data))
-      .catch(err => console.error("Error fetching data:", err));
-  };
+  axios.get('https://queueless-mumbai.onrender.com/api/locations')
+    .then(res => setLocations(res.data))
+    .catch(err => console.error("Error fetching data:", err));
+};
 
   useEffect(() => {
     fetchLocations();
