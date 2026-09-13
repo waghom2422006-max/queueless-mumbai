@@ -22,7 +22,7 @@ function App() {
   ];
 
   const fetchLocations = () => {
-    axios.get('http://127.0.0.1:5000/api/locations')
+    axios.get('https://queueless-mumbai.onrender.com')
       .then(res => setLocations(res.data))
       .catch(err => console.error("Error fetching data:", err));
   };
